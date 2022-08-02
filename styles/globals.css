@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Saira', "sans-serif";
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.inputButton {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+}
+input[type=checkbox]+label {
+  background-color: #ccc;
+  font-style: italic;
+}
+
+input[type=checkbox]:checked+label {
+  background-color: #f00;
+  font-style: normal;
+}
+
+.lingH12 {
+    line-height: 12rem;
+  }
+
+  .stroke {
+    -webkit-text-stroke: 1px rgb(47, 47, 47);
+    -webkit-text-fill-color: transparent;
+  }
+  .stroke-white {
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+    -webkit-text-fill-color: transparent;
+  }
+
+@tailwind components;
+
+@tailwind utilities;
+
+@layer utilities {
+  
+
+  .contentContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .flex--items {
+    @apply flex items-center;
+  }
+  .flex--between {
+    @apply flex items-center justify-between;
+  }
+
+  .activitesBT {
+    @apply border-b-2 pb-6 lg:py-12 py-6 leading-snug font-semibold text-white lg:text-[4vh] text-xl space-y-4 border-[#ffffff9a]
+  }
+  
+  .tab {
+    overflow: hidden;
+  }
+  .bgimg {
+    background-image: url('/images/vector.webp')
+  }
+  .bgimgMap {
+    background-image: url('/images/map.webp')
+  }
+  .tab-content {
+    max-height: 0;
+    transition: all 0.5s;
+  }
+  input:checked + .tab-label .test {
+    background-color: #655CED;
+  }
+  input:checked + .tab-label .test svg {
+    transform: rotate(180deg);
+    color: #fff;
+     transition: all 0.5s;
+  }
+  input:checked + .tab-label::after {
+    transform: rotate(90deg);
+  }
+  input:checked ~ .tab-content {
+    max-height: 100vh;
+  }
+}
