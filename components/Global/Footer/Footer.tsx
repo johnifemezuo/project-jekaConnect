@@ -13,7 +13,7 @@ function Footer() {
   return (
     <div className=" pt-12 pb-12 md:pb-28  bg-[#0288FA]">
       <Container>
-        <div className="space-y-12 lg:space-y-0 lg:flex--between">
+        <div className="space-y-12 lg:space-y-0 lg:flex--between ">
           <div>
             <Logo />
           </div>

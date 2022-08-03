@@ -19,7 +19,8 @@ function NavLinks() {
   }
 
   return (
-    <StyledNavLinks $isOpen={openNavbar}>
+    <StyledNavLinks $isOpen={openNavbar} onClick={() => setOpenNavbar(false)
+    }>
       <NavLink activeClass={addActiveClass("/#aboutUs")} navLink="/#aboutUs">
         Company
       </NavLink>
