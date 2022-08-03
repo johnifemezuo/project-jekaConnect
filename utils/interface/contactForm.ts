@@ -1,6 +1,6 @@
-export interface Idata {
-  fullName: string;
+export  interface Idata {
+  name: string;
   email: string;
   message: string;
-  number: number;
+  phone: number;
 }

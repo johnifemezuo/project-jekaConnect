@@ -7,8 +7,11 @@ import Button from "../../../Global/UI/Button/Button";
 gsap.registerPlugin(ScrollTrigger);
 function ActivitiesSection() {
   return (
-    <section id="activities" className="overflow-hidden relative py-20 lg:py-[20vh] bg-[#02DCC2]">
-      <h1 className="stroke-white z-10 lg:text-9xl w-[850px] font-extrabold absolute left-0 top-0 lg:mt-[50vh] lg:-ml-[24vh] pl-4 mt-6 lg:pl-0 pt-8 text-3xl lg:-rotate-90">
+    <section
+      id="activities"
+      className="overflow-hidden relative py-20 lg:py-[20vh] bg-[#02DCC2]"
+    >
+      <h1 className="stroke-white z-10 w-[850px] xl:text-9xl lg:text-7xl font-extrabold absolute left-0 top-0 2xl:mt-[50vh] 2xl:-ml-[18%] pl-4 text-5xl mt-6 lg:pl-0 pt-8 md:text-6xl 2xl:-rotate-90 ">
         Our Activities
       </h1>
 

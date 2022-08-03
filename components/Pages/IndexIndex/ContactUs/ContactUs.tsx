@@ -3,6 +3,7 @@ import axios from "axios";
 import React, { useRef, useState } from "react";
 import { FieldValues, useForm } from "react-hook-form";
 import toast from "react-hot-toast";
+import { Idata } from "../../../../utils/interface/contactForm";
 import { formValidatorSchema } from "./formValidator";
 
 const formUrl = process.env.NEXT_PUBLIC_FORM_URL;
@@ -47,19 +48,14 @@ function ContactUs() {
     formState: { errors },
   } = useForm({ resolver: yupResolver(formValidatorSchema) });
 
-  interface Idata {
-    fullName: string,
-    email: string,
-    message: string,
-    number: number
-  }
+
 
   const submitForm = (data: Idata | any) => {
-    const interest = getUserInterest();
+    const interests = getUserInterest();
 
     const payload: any = {
       ...data,
-      interest,
+      interests,
     };
 
     setLoading(true)
@@ -173,11 +169,11 @@ function ContactUs() {
                     {errors.fullName?.message}
                   </p>
                   <input
-                    {...register("fullName", {
+                    {...register("name", {
                       required: "Please add a name",
                       minLength: 4,
                     })}
-                    name="fullName"
+                    name="name"
                     className=" outline-none w-full bg-transparent placeholder:text-input-color text-white placeholder:text-white text-sm placeholder:letter-spacing-5 placeholder:text-sm md:placeholder:text-base text-input-color border-b  border-input-color md:text-xl    py-3 md:py-4"
                     placeholder={"Full name"}
                   />
@@ -199,15 +195,15 @@ function ContactUs() {
 
                 <div>
                   <p className="text-red-500 text-sm md:text-lg text-left mb-2">
-                    {errors.number?.message}
+                    {errors.phone?.message}
                   </p>
                   <input
-                    {...register("number", {
+                    {...register("phone", {
                       required: "phone number is required",
                     })}
                     className="  outline-none w-full bg-transparent placeholder:text-input-color text-white placeholder:text-white text-sm placeholder:letter-spacing-5 placeholder:text-sm md:placeholder:text-base text-input-color border-b  border-input-color md:text-xl    py-3 md:py-4"
                     placeholder={"Your phone number"}
-                    name="number"
+                    name="phone"
                     type="number"
                   />
                 </div>

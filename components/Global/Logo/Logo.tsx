@@ -1,15 +1,12 @@
-import Image from 'next/image';
-import Link from 'next/link';
-import React from 'react'
-import { StyledLogo } from './style/StyledLogo';
-
+import Link from "next/link";
+import React from "react";
 
 function Logo() {
   return (
-      <Link href={`/`}>
-        <img src="/images/logo.png" className='h-20' />
-      </Link>
+    <Link href={`/`}>
+      <img src="/images/logo.png" className="h-20 cursor-pointer" />
+    </Link>
   );
 }
 
-export default Logo
+export default Logo;

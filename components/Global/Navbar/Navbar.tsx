@@ -13,12 +13,6 @@ import { StyledNavbarWrapper } from "./styles/StyledNavbar";
 
 function Navbar() {
   const [openNavbar, setOpenNavbar] = useAtom(openNav);
-  const isLogin = useSelector((state: RootState) => state.user.login);
-  const dispatch = useDispatch();
-
-  function handleChange(user: any) {
-    dispatch(logUserName(user));
-  }
 
   return (
     <div className="w-full bg-transparent py-2 z-50 top-0  right-0 left-0">
@@ -26,7 +20,11 @@ function Navbar() {
         <StyledNavbarWrapper>
           <Logo />
           <NavLinks />
-
+          <div
+            style={{display: openNavbar ? "block" : "none"}}
+            onClick={() => setOpenNavbar(false)}
+            className={`  bg-[#00000046] w-full h-screen md:hidden fixed inset-0 z-10 `}
+          ></div>
           <div
             onClick={() => setOpenNavbar(!openNavbar)}
             className="block lg:hidden text-white"

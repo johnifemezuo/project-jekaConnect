@@ -11,16 +11,16 @@ function AboutUsSection() {
       className="relative bg-[#f4f4f4]  overflow-hidden h-screen grid place-content-center"
       id="aboutUs"
     >
-      <h1 className="stroke z-10 lg:text-9xl font-extrabold absolute left-0 top-0 lg:mt-[33vh] lg:-ml-[12vh] pl-4 text-3xl mt-6 lg:pl-0 pt-8  lg:-rotate-90">
+      <h1 className="stroke z-10 w-[550px] xl:text-9xl lg:text-7xl font-extrabold absolute left-0 top-0 2xl:mt-[33vh] 2xl:-ml-[10%] pl-4 text-5xl mt-6 lg:pl-0 pt-8 md:text-6xl 2xl:-rotate-90">
         About us
       </h1>
 
       <img src="/images/hey.png" className="absolute top-0 -mt-[40vh]" />
 
       <Container>
-        <div className="md:flex--between w-full  lg:w-[1200px] ">
-          <div>
-            <div className="text-2xl lg:text-5xl font-bold space-y-2 lg:space-y-4">
+        <div className="md:flex--between w-full pt-20 lg:w-[1200px] ">
+          <div className="">
+            <div className="text-2xl md:text-4xl lg:text-5xl font-bold md:space-y-2 lg:space-y-4 flex items-center space-x-2 md:space-x-0 md:grid">
               <h1>6ided</h1>
               <h1>Technology</h1>
               <h1>Limited</h1>
@@ -36,7 +36,11 @@ function AboutUsSection() {
           </div>
 
           <div>
-            <img src="/images/cute.png" alt="cube" className="lg:w-[600px]"/>
+            <img
+              src="/images/cute.png"
+              alt="cube"
+              className="xl:w-[600px] md:w-[500px] w-[440px] mx-auto"
+            />
           </div>
         </div>
       </Container>

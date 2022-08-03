@@ -15,7 +15,7 @@ function NavLinks() {
   function addActiveClass(path: any) {
     return router.pathname === path
       ? "text-primary "
-      : "text-textColor";
+      : "text-white";
   }
 
   return (

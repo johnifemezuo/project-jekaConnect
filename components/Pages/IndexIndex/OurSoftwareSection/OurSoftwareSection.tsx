@@ -7,7 +7,7 @@ function OurSoftwareSection() {
       className="relative bg-[#f4f4f4] py-20 lg:py-[12vh] overflow-hidden  grid place-content-center"
       id="solution"
     >
-      <h1 className="stroke z-10 lg:text-9xl w-[890px] font-extrabold absolute left-0 top-0 lg:mt-[60vh] lg:-ml-[28vh] pl-4 mt-6 lg:pl-0 pt-8 text-3xl lg:-rotate-90">
+      <h1 className="stroke z-10 xl:w-[900px] xl:text-9xl lg:text-7xl font-extrabold absolute left-0 top-0 2xl:mt-[70vh] 2xl:-ml-[20%] pl-4 text-4xl mt-6 lg:pl-0 pt-8 md:text-6xl 2xl:-rotate-90">
         Our Softwares
       </h1>
 
@@ -17,7 +17,7 @@ function OurSoftwareSection() {
       />
 
       <Container>
-        <div className="lg:flex mt-12 items-center justify-between lg:w-[1300px] gap-20 lg:mt-[20vh] ">
+        <div className="lg:flex mt-28 items-center justify-between lg:w-[1300px] gap-20 lg:mt-[30vh] ">
           <div className="mb-6 lg:mb-0">
             <div className="text-2xl lg:text-5xl font-bold space-y-2 md:space-y-4">
               <h1>Our Remarkable</h1>
