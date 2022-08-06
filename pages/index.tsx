@@ -6,7 +6,7 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Home | 61Ded</title>
+        <title>Home | JekaConnect</title>
       </Head>
 
       <HomeIndex />

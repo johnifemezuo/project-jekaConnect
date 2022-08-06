@@ -11,38 +11,34 @@ import Logo from "../Logo/Logo";
 function Footer() {
 
   return (
-    <div className=" pt-12 pb-12 md:pb-28  bg-[#0288FA]">
+    <div className=" pt-12 py-12  border-t  border-[#2e5f71] bg-[#103441]">
       <Container>
         <div className="space-y-12 lg:space-y-0 lg:flex--between ">
-          <div>
-            <Logo />
-          </div>
-
           <div className="flex  items-center space-x-12  ">
             <Link href={`/`}>
-              <a className="text-white lg:text-xl">Team</a>
+              <a className="text-white lg:text-xl">Features</a>
             </Link>
 
             <Link href={`/`}>
-              <a className="text-white lg:text-xl">Case Studies</a>
+              <a className="text-white lg:text-xl">About us</a>
             </Link>
 
             <Link href={`/`}>
-              <a className="text-white lg:text-xl">Publick</a>
+              <a className="text-white lg:text-xl">Partner</a>
             </Link>
           </div>
 
-          <div className="flex space-x-6 ">
-            <a href="/" className="rounded-full border p-3 md:p-4 inline-block text-white">
+          <div className="flex space-x-6 text-center  ">
+            <a href="/" className=" md:p-4 hover:text-primary transition-all inline-block text-white">
               <Linkedin />
             </a>
-            <a href="/" className="rounded-full border p-3 md:p-4 inline-block text-white">
+            <a href="/" className=" md:p-4 hover:text-primary transition-all inline-block text-white">
               <FacebookIcon />
             </a>
-            <a href="/" className="rounded-full border p-3 md:p-4 inline-block text-white">
+            <a href="/" className=" md:p-4 hover:text-primary transition-all inline-block text-white">
               <Instagram />
             </a>
-            <a href="/" className="rounded-full border p-3 md:p-4 inline-block text-white">
+            <a href="/" className=" md:p-4 hover:text-primary transition-all inline-block text-white">
               <YoutubeIcon />
             </a>
           </div>

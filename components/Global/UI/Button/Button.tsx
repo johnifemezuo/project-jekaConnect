@@ -5,14 +5,13 @@ interface IButton {
   children: any;
   onClick?: () => void;
   link?: string;
-  customeStyle?: string,
 }
 
-function Button({ children, onClick, link, customeStyle }: IButton) {
+function Button({ children, onClick, link }: IButton) {
   return (
     <Link href={`${link}`}>
       <button
-        className={`text-center  mx-auto font-semibold md:text-xl w-[180px] md:w-[240px] py-6  transition ${customeStyle} `}
+        className={`text-center rounded-2xl md:rounded-3xl relative bg-primary hover:bg-[#ffcea4] text-white mx-auto font-medium cursor-pointer md:text-xl w-[160px] md:w-[210px] md:py-5 py-4 px-5 transition  `}
         onClick={onClick}
       >
         {children}

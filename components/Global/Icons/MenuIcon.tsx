@@ -9,10 +9,7 @@ function MenuIcon() {
       width="25"
       height="25"
     >
-      <path
-        d="M0 5.5h15m-15-4h15m-15 8h15m-15 4h15"
-        stroke="currentColor"
-      ></path>
+      <path d="M0 3.5h15m-15 8h9m-9-4h6" stroke="currentColor"></path>
     </svg>
   );
 }

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+  <g id="Group_24086" data-name="Group 24086" transform="translate(-173 -435)">
+    <rect id="Rectangle_3403" data-name="Rectangle 3403" width="8" height="8.4" rx="4" transform="translate(175 437.4)" fill="#103441"/>
+    <rect id="Rectangle_3404" data-name="Rectangle 3404" width="4.8" height="2.4" rx="1.2" transform="translate(176.6 443.4)" fill="#ff6a6a"/>
+    <path id="Icon_awesome-laugh-beam" data-name="Icon awesome-laugh-beam" d="M6,.562a6,6,0,1,0,6,6A6,6,0,0,0,6,.562Zm.581,4.824c.08-1.019.779-1.727,1.355-1.727S9.21,4.368,9.29,5.387a.193.193,0,0,1-.36.109L8.7,5.084a.905.905,0,0,0-.762-.523.905.905,0,0,0-.762.523l-.23.411A.2.2,0,0,1,6.581,5.387Zm-3.871,0c.08-1.019.779-1.727,1.355-1.727s1.275.709,1.355,1.727a.193.193,0,0,1-.36.109l-.23-.411a.905.905,0,0,0-.762-.523.905.905,0,0,0-.762.523l-.23.411A.2.2,0,0,1,2.71,5.387ZM9.651,7.772a3.487,3.487,0,0,1-3.457,3.048H5.806A3.487,3.487,0,0,1,2.349,7.772a.389.389,0,0,1,.385-.435H9.266A.387.387,0,0,1,9.651,7.772Z" transform="translate(173 434.438)" fill="#ffc75d"/>
+  </g>
+</svg>

@@ -1,24 +1,18 @@
 import React from "react";
-import AboutUsSection from "./AboutUsSection/AboutUsSection";
-import ActivitiesSection from "./Activities/ActivitiesSection";
-import ContactUs from "./ContactUs/ContactUs";
 import HeroSection from "./HeroSection/HeroSection";
-import LetsDiscuss from "./LetsDiscuss/LetsDiscuss";
-import OurSoftwareSection from "./OurSoftwareSection/OurSoftwareSection";
+import SectionFour from "./SectionFour/SectionFour";
+import SectionThree from "./SectionThree/SectionThree";
+import SectionTwo from "./SectionTwo/SectionTwo";
 
 function HomeIndex() {
   return (
     <div>
       <HeroSection />
-      <AboutUsSection />
-      <ActivitiesSection />
-      <OurSoftwareSection />
-      <ContactUs/>
-      <LetsDiscuss />
+      <SectionTwo />
+      <SectionThree />
+      <SectionFour />
     </div>
   );
 }
 
 export default HomeIndex;
-
-

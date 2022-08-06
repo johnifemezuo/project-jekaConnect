@@ -1,9 +1,8 @@
 import { useAtom } from "jotai";
-import Link from "next/link";
 import { useRouter } from "next/router";
 import React from "react";
 import { openNav } from "../../../base/atom/useAtom";
-import Button from "../UI/Button/Button";
+import Logo from "../Logo/Logo";
 import NavLink from "./NavLink";
 import { StyledNavLinks } from "./styles/StyledNavbar";
 
@@ -13,31 +12,20 @@ function NavLinks() {
   const router = useRouter();
 
   function addActiveClass(path: any) {
-    return router.pathname === path
-      ? "text-primary "
-      : "text-white";
+    return router.pathname === path ? "text-primary " : "text-[#103441]";
   }
 
   return (
-    <StyledNavLinks $isOpen={openNavbar} onClick={() => setOpenNavbar(false)
-    }>
+    <StyledNavLinks $isOpen={openNavbar} onClick={() => setOpenNavbar(false)}>
+      <div className="w-full md:hidden ml-8">
+        <Logo />
+      </div>
       <NavLink activeClass={addActiveClass("/#aboutUs")} navLink="/#aboutUs">
-        Company
+        About
       </NavLink>
-      <NavLink activeClass={addActiveClass("/#activities")} navLink="/#activities">
-        Our activities
+      <NavLink activeClass={addActiveClass("/#features")} navLink="/#features">
+        Features
       </NavLink>
-      <NavLink
-        activeClass={addActiveClass("/#solution")}
-        navLink="/#solution"
-      >
-        Solution
-      </NavLink>
-      <NavLink activeClass={addActiveClass("#contact")} navLink="#contact">
-        Contact
-      </NavLink>
-
-      
     </StyledNavLinks>
   );
 }

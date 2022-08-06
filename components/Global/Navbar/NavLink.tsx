@@ -7,7 +7,7 @@ function NavLink({ children, navLink, activeClass }: any) {
       <Link href={navLink}>
         <a
           className={`
-   ${activeClass} text-base lg:text-lg hover:text-[#0a4a41] transition-all ml-6 md:ml-0    
+   ${activeClass} text-base lg:text-lg hover:text-primary transition-all ml-6 md:ml-0    
 `}
         >
           {children}

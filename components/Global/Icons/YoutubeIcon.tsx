@@ -7,8 +7,8 @@ function YoutubeIcon() {
         viewBox="0 0 15 15"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        width="22"
-        height="22"
+        width="25"
+        height="25"
       >
         <path
           d="M8.599 7.5L7 8.566V6.434L8.599 7.5z"
