@@ -12,11 +12,12 @@ function SectionThree() {
       <Container>
         <div className="pt-20 lg:pt-26">
           <Header isDark={true}>
-            Earn badges and increase your ranking on the global leaderboard
+            Join the race to the top. Earn badges while climbing the global
+            leaderboad
           </Header>
           <Para>
-            As you gain experience points, your ranking increases and you can
-            also convert these points to a crypto asset
+            As you earn points, your ranking increases. You also get an
+            opportunity to convert those points into a crypto asset.
           </Para>
 
           <div className="mt-12 lg:flex space-y-6 lg:space-y-0 md:space-x-12  mx-auto text-center grid place-content-center w-full lg:w-[500px]">
@@ -26,8 +27,9 @@ function SectionThree() {
               </StoresButton>
             </Link>
             <Link href="/">
-
-            <StoresButton img="images/applestore.svg">Apple Store</StoresButton>
+              <StoresButton img="images/applestore.svg">
+                Apple Store
+              </StoresButton>
             </Link>
           </div>
         </div>

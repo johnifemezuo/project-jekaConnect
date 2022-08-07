@@ -43,10 +43,15 @@ function HeroSection() {
     >
       <Container>
         <div className="pt-12 lg:pt-26">
-          <Header isDark={true}>Hang out with friends and see what`s happening around</Header>
+          <Header isDark={true}>
+            Connect with your tribe and enjoy specially curated offers and
+            experiences
+          </Header>
           <Para>
-            We create beautiful and functional software experiences for amazing
-            brands
+            Build tribes and connect with those who matter to you in meaningful
+            new ways online and offline. The absolute best deals for unwinding
+            as a group Get access to amazing offers on Jekaconnect. Make every
+            hang out uniquely memorable.
           </Para>
 
           <div className="mt-12 lg:flex space-y-6 lg:space-y-0 md:space-x-12  mx-auto text-center grid place-content-center w-full lg:w-[500px]">

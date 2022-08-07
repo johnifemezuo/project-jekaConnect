@@ -12,10 +12,12 @@ function SectionTwo() {
     >
       <Container>
         <div className="pt-20 lg:pt-36">
-          <Header isDark={true}>Create and share content based on interests</Header>
+          <Header isDark={true}>
+            Create and share content with your inner circle, Chat, Banter and 
+            Express yourself.{" "}
+          </Header>
           <Para>
-            Engage, create, post and share your content with your tribe members
-            based on interest
+            Let the good times roll as you explore only the things you love.
           </Para>
 
           <div className="mt-20 lg:mt-44">

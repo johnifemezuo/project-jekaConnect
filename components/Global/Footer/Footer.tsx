@@ -1,15 +1,9 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import Container from "../../../Layout/Container";
-import FacebookIcon from "../Icons/FacebookIcon";
-import Instagram from "../Icons/Instagram";
-import Linkedin from "../Icons/Linkedin";
-import MenuIcon from "../Icons/MenuIcon";
-import YoutubeIcon from "../Icons/YoutubeIcon";
-import Logo from "../Logo/Logo";
 
 function Footer() {
-
   return (
     <div className=" pt-12 py-12  border-t  border-[#2e5f71] bg-[#103441]">
       <Container>
@@ -29,17 +23,49 @@ function Footer() {
           </div>
 
           <div className="flex space-x-6 text-center  ">
-            <a href="/" className=" md:p-4 hover:text-primary transition-all inline-block text-white">
-              <Linkedin />
+            <a
+              href="/"
+              className=" md:p-4 hover:text-primary transition-all inline-block text-white"
+            >
+              <Image
+                src="/images/twitter.svg"
+                alt="twitter"
+                width={30}
+                height={30}
+              />
             </a>
-            <a href="/" className=" md:p-4 hover:text-primary transition-all inline-block text-white">
-              <FacebookIcon />
+            <a
+              href="/"
+              className=" md:p-4 hover:text-primary transition-all inline-block text-white"
+            >
+              <Image
+                src="/images/instagram.svg"
+                alt="instagram"
+                width={30}
+                height={30}
+              />
             </a>
-            <a href="/" className=" md:p-4 hover:text-primary transition-all inline-block text-white">
-              <Instagram />
+            <a
+              href="/"
+              className=" md:p-4 hover:text-primary transition-all inline-block text-white"
+            >
+              <Image
+                src="/images/youtube.svg"
+                alt="youtube"
+                width={30}
+                height={30}
+              />
             </a>
-            <a href="/" className=" md:p-4 hover:text-primary transition-all inline-block text-white">
-              <YoutubeIcon />
+            <a
+              href="/"
+              className=" md:p-4 hover:text-primary transition-all inline-block text-white"
+            >
+              <Image
+                src="/images/whatsapp.svg"
+                alt="whatsapp"
+                width={30}
+                height={30}
+              />
             </a>
           </div>
         </div>

@@ -11,7 +11,7 @@ export const Para = ({ children, isDark }: Props) => {
       className={` lg:text-xl ${
         isDark ? "text-white" : "text-[#7D8C91]"
       } tracking-wider  
-lg:w-[800px] text-center m-auto text-sm px-6 lg:px-20 `}
+lg:w-[800px] text-center m-auto text-sm  `}
     >
       {children}
     </div>
